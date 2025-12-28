@@ -569,7 +569,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "android.hidl.memory@1.0",
-                "vendor.qti.qspmhal@1.0_vendor",
                 "libdl",
                 "libz",
                 "liblog",
@@ -589,7 +588,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "android.hidl.memory@1.0",
-                "vendor.qti.qspmhal@1.0_vendor",
                 "libdl",
                 "libz",
                 "liblog",
@@ -600,6 +598,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -14137,22 +14136,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-blair",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-blair.sh",
-    filename: "init.kernel.post_boot-blair.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-holi",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-holi.sh",
-    filename: "init.kernel.post_boot-holi.sh",
     soc_specific: true,
 }
 
