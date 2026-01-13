@@ -444,6 +444,9 @@ PRODUCT_PACKAGES += \
     qcrild_libqcrilnrutils \
     qtiril-utils \
     qtiwakelock \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
